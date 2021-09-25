@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms_Training.Algorithm.Dynamic
 {
@@ -22,11 +20,21 @@ namespace Algorithms_Training.Algorithm.Dynamic
         public long SolveOptimized(int m, int n)
         {
             string key = $"{m},{n}";
-            // string key2 = $"{n},{m}";
+            // memoization
             if (_memo.ContainsKey(key))
+            {
                 return _memo[key];
-            if (m == 1 && n == 1) return 1;
-            if (m == 0 || n == 0) return 0;
+            }
+            // base case #1
+            if (m == 1 && n == 1)
+            {
+                return 1;
+            }
+            // base case #2
+            if (m == 0 || n == 0)
+            {
+                return 0;
+            }
             long value = SolveOptimized(m - 1, n) + SolveOptimized(m, n - 1);
             _memo[key] = value;
             return value;
@@ -40,8 +48,16 @@ namespace Algorithms_Training.Algorithm.Dynamic
         /// <returns></returns>
         public long Solve(int m, int n)
         {
-            if (m == 1 && n == 1) return 1;
-            if (m == 0 || n == 0) return 0;
+            // base case #1
+            if (m == 1 && n == 1)
+            {
+                return 1;
+            }
+            // base case #2
+            if (m == 0 || n == 0)
+            {
+                return 0;
+            }
             return (Solve(m - 1, n) + Solve(m, n - 1));
         }
 
@@ -55,16 +71,6 @@ namespace Algorithms_Training.Algorithm.Dynamic
             Console.WriteLine($"Input: ({row},{col}), Output: {Output}");
             ShowTimeTaken();
         }
-        public override void Run()
-        {
-            StartTime = DateTime.Now;
-            Output = Solve(1, 1);
-            EndTime = DateTime.Now;
-        }
 
-        public override void ShowTimeTaken()
-        {
-            Console.WriteLine($"Time taken for this run :{(EndTime - StartTime).TotalMilliseconds} milliseconds");
-        }
     }
 }

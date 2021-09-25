@@ -17,9 +17,14 @@ namespace Algorithms_Training.Algorithm.Dynamic
         /// <returns></returns>
         public long SolveOptimized(int index)
         {
+            // memoization
+            //base case #1 + #2
             if (_memo.ContainsKey(index))
+            {
                 return _memo[index];
+            }
 
+            // traversal method
             long value = SolveOptimized(index - 1) + SolveOptimized(index - 2);
 
             _memo[index] = value;
@@ -35,16 +40,14 @@ namespace Algorithms_Training.Algorithm.Dynamic
         /// <returns></returns>
         public long Solve(int index)
         {
-            if (index <= 2) return 1;
+            //base case #1
+            if (index <= 2)
+            {
+                return 1;
+            }
             return Solve(index - 1) + Solve(index - 2);
         }
 
-        public override void Run()
-        {
-            StartTime = DateTime.Now;
-            Output = Solve(7);
-            EndTime = DateTime.Now;
-        }
         public void RunWithInput(int index)
         {
             StartTime = DateTime.Now;
@@ -52,10 +55,6 @@ namespace Algorithms_Training.Algorithm.Dynamic
             EndTime = DateTime.Now;
             Console.WriteLine($"Input: {index}, Output: {Output}");
             ShowTimeTaken();
-        }
-        public override void ShowTimeTaken()
-        {
-            Console.WriteLine($"Time taken for this run :{(EndTime - StartTime).TotalMilliseconds} milliseconds");
         }
 
     }

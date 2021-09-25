@@ -3,11 +3,13 @@
 
 namespace Algorithms_Training.Algorithm
 {
-    public abstract class Algorithm
+    public class Algorithm
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public abstract void Run();
-        public abstract void ShowTimeTaken();
+        public void ShowTimeTaken()
+        {
+            Console.WriteLine($"Time taken for this run :{(EndTime - StartTime).TotalMilliseconds} milliseconds");
+        }
     }
 }
