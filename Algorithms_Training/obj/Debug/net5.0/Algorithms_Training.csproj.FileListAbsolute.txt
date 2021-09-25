@@ -1,0 +1,16 @@
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.exe
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.deps.json
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.runtimeconfig.json
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.runtimeconfig.dev.json
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.dll
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\ref\Algorithms_Training.dll
+D:\MyProjects\algo_training\Algorithms_Training\bin\Debug\net5.0\Algorithms_Training.pdb
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.csproj.AssemblyReference.cache
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.AssemblyInfoInputs.cache
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.AssemblyInfo.cs
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.csproj.CoreCompileInputs.cache
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.dll
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\ref\Algorithms_Training.dll
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.pdb
+D:\MyProjects\algo_training\Algorithms_Training\obj\Debug\net5.0\Algorithms_Training.genruntimeconfig.cache
