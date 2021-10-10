@@ -10,7 +10,11 @@ namespace Algorithms_Training
             //AlgoRun.DoFibonacci();
             //AlgoRun.DoGridTraveller();
             //AlgoRun.DoCanSum();
-            AlgoRun.DoHowSum();
+            //AlgoRun.DoHowSum();
+            //AlgoRun.DoBestSum();
+            //AlgoRun.DoCanConstruct();
+            //AlgoRun.DoCountConstruct();
+            AlgoRun.DoAllConstruct();
             //Console.ReadKey(); 
         }
 
